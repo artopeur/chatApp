@@ -24,7 +24,8 @@ class DefaultRooms(
 
 // Using a 'const' for compile-time constants is a good practice.
 object conf {
-    const val SERVER_URL = "http://192.168.1.137:3112" // Use 10.0.2.2 to connect to localhost from Android emulator
+    //const val SERVER_URL = "http://192.168.1.137:3112" // Use 10.0.2.2 to connect to localhost from Android emulator
+    const val SERVER_URL = "https://chatapp.ydns.eu:3000" // the main chatapp url.
     const val ROOMS_ENDPOINT = "/rooms"
     const val MESSAGES_ENDPOINT = "/messages"
 }

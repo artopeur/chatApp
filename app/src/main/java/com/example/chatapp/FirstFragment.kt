@@ -67,7 +67,7 @@ class FirstFragment : Fragment() {
             data.name = usernameInput.text.toString()
             Log.d("CHAT", data.name)
             Log.d("CHAT", data.USERID.toString())
-            val action = FirstFragmentDirections.actionFirstFragmentToSecondFragment(username)
+            val action = FirstFragmentDirections.actionFirstFragmentToSecondFragment(username, roomSpinner.selectedItem.toString())
 
             findNavController().navigate(action)
         }

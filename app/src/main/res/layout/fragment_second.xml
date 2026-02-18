@@ -35,6 +35,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Room: General"
+            android:scrollbars="vertical"
+            android:overScrollMode="always"
             android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="#ffffff" />
@@ -51,14 +53,15 @@
         <ListView
             android:id="@+id/messageList"
             android:layout_width="match_parent"
-            android:layout_height="550dp"
-            android:text="messages appear here"
-            android:textSize="14sp"
-            android:background="#ffffff"
-            android:textColor="#000000"
-            android:padding="12dp"
+            android:layout_height="600dp"
+            android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
-            />
+            app:layout_constraintBottom_toTopOf="@+id/messageInput"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roomNameText"
+            android:background="#00ff00"
+            android:textColor="#000000"/>
         <Button
             android:id="@+id/sendButton"
             android:layout_width="80dp"

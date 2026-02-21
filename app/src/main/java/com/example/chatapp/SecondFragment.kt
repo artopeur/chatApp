@@ -80,14 +80,6 @@ class SecondFragment : Fragment() {
             messageInput.setText("")
         }
     }
-
-    /*fun addMessageToView(msg: String) {
-        Log.d("CHAT", "adding: $msg" )
-        adapter.add(msg)
-        adapter.notifyDataSetChanged()
-    }
-    */
-
     fun sendMessage(msg: String) {
         Log.d("CHAT", "sending: $msg")
         SocketManager.sendMessage(room, msg)
